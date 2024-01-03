@@ -21,10 +21,10 @@ p {
 
 form {
   display: grid;
-  font-size: 1.25rem;
-  gap: 50px;
   justify-items: end;
   padding: 10px;
+  font-size: 1.25rem;
+  gap: 50px;
 }
 
 input,
@@ -35,29 +35,29 @@ input,
 
 form div:nth-child(4) {
   display: flex;
-  gap: 10px;
   justify-content: center;
   width: 100%;
+  gap: 10px;
 }
 
 input[type="checkbox"] {
-  height: 20px;
   width: 20px;
+  height: 20px;
 }
 
 .addBook {
-  padding: 5px;
   width: 100%;
+  padding: 5px;
 }
 
 .content {
-  align-items: center;
   display: grid;
-  gap: 10px;
   grid-auto-rows: 60px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 60px);
+  align-items: center;
   justify-items: center;
+  gap: 10px;
 }
 
 .content h2:nth-child(4) {
@@ -65,8 +65,79 @@ input[type="checkbox"] {
 }
 
 .status-btn {
-  font-size: inherit;
-  font-family: inherit;
   width: max(50%, 80px);
   padding: 3px 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+form {
+  display: grid;
+  justify-items: end;
+  padding: 10px;
+  font-size: 1.25rem;
+  gap: 50px;
+}
+
+input,
+.addBook {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+form div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.addBook {
+  width: 100%;
+  padding: 5px;
+}
+
+.content {
+  display: grid;
+  grid-auto-rows: 60px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 60px);
+  place-items: center;
+  gap: 10px;
+}
+
+.content h2:nth-child(4) {
+  grid-column: span 2;
+}
+
+.status-btn {
+  width: max(50%, 80px);
+  padding: 3px 0;
+  font-family: inherit;
+  font-size: inherit;
 }
